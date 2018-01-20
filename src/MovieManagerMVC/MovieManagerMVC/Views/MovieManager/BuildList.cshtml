@@ -1,0 +1,11 @@
+﻿@model IEnumerable<nb.MovieLibrary.Movie>
+
+    <ul>
+@foreach (var item in Model)
+{
+        <li>
+            @item.getMovieInfo()
+        </li>
+}
+        </ul>
+
